@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#date:14-Aug-2018
 #author: divya
 #aim: This is a common library file.
 
@@ -14,7 +14,6 @@ if [ $? -ne 0 ]; then
 else
 	exit 0;
 fi
-
 }
 
 

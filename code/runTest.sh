@@ -13,6 +13,9 @@ exit_status
 #read the error file
 echo "\nError log: \n` cat $DIR/log/err.out `\n"
 
+#introduce a bug: Calling a function that does not exist in the library file.
+no_function
+
 exit 0
 }
 

@@ -1,9 +1,17 @@
 #!/bin/sh
 
 #Library includes:
-. ../lib/commonLibrary.sh
+. lib/commonLibrary.sh
 
 main(){
+set_variables
+echo "\nCurrent path: $DIR"
+
+cat nofile 2> $DIR/log/err.out
+exit_status
+
+#read the error file
+echo "\nError log: \n` cat $DIR/log/err.out `\n"
 
 exit 0
 }

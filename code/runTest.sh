@@ -3,9 +3,6 @@
 #Library includes:
 . lib/commonLibrary.sh
 
-main(){
-set_variables
-echo "\nCurrent path: $DIR"
 
 cat nofile 2> $DIR/log/err.out
 exit_status
